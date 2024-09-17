@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class RemoveEven {
+    public static void main(String[] args) {
+        ArrayList<Integer>List=new ArrayList<>();
+        List.add(3);
+        List.add(4);
+        List.add(5);
+        List.add(8);
+        List.add(9);
+        System.out.println(List);
+        EvenRemove(List);
+        System.out.println("Removed even elements: "+List);
+    }
+    public static void EvenRemove(ArrayList<Integer>List){
+        for (int i=List.size()-1;i>=0;i--){
+            if (List.get(i)%2==0){
+                List.remove(i);
+            }
+        }
+    }
+}
