@@ -1,0 +1,16 @@
+public class RemoveVowel {
+    public static void main(String[] args) {
+    String vowel="Youcandoit.";
+    REMOVE_vowel(vowel);
+
+    }
+    public static void REMOVE_vowel(String vowel){
+        for (int i=0;i<vowel.length();i++){
+            char ch=vowel.charAt(i);
+            if (ch=='a' || ch=='e'|| ch=='i' || ch=='o' || ch=='u'){
+                continue;
+            }
+            System.out.print(ch);
+        }
+    }
+}
